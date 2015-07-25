@@ -12,10 +12,6 @@ span {
       -ms-user-select: none;
 }
 
-.container {
-    width: 960px;
-}
-
 .header {
     background: #000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.15);
@@ -50,36 +46,30 @@ span {
     margin: 0;
 }
 
-.col-md-8 p {
+.col-xs-6 p {
     color: #fff;
     font-size: 20px;
 }
 
-.col-md-2 {
-    padding: 0;
-    margin: 0;
-}
-
 .counters {
     text-align: center;
-    margin: 0 0 0 5px;
-    padding: 0;
-    width: 150px;
 }
 
-.col-md-2 span {
+.counters span {
     background: #ffa800;
-    font-size: 25px;
-    height: 50px;
-    width: 50px;
+    font-size: 20px;
+    width: 40px;
 }
 
-.col-md-2 span:hover {
-    background: #f1f1f1;
-}
-
-span.count {
+.counters span.count {
     background: #fff;
-    height: 50px;
-    width: 50px;
+}
+
+@media (max-width: 480px) {
+    .col-xs-6 {
+        width: 41%;
+    }
+    .col-xs-4 {
+        width: 42%;
+    }
 }
